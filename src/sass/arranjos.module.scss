@@ -1,0 +1,105 @@
+
+@use "sass:math";
+
+$fonte-linda: LindenHill;
+$fonte-aller: Aller;
+$fonte-quicksand: QuickSand;
+$fonte-josefin: JosefinSans;
+$fonte-rainshow: Rainshow;
+$fonte-philosopher: Philosopher;
+$fonte-insani: Insani;
+$fonte-reey: Reey;
+$fonte-grande:32px;
+$cor-verde1: #D6F98B;
+$cor-verde2: #CCF476;
+$cor-fundo: #EDFFC7;
+
+$cor-marrom: #FCDB86;
+$cor-marrom-escuro: #BC770F;
+
+
+$altura-nav:50px;
+$altura-rodape:100px;
+$altura-titulo:60px;
+$altura-borda: 1*22px;
+$altura-conteudo:calc(100% - ($altura-nav + $altura-titulo + $altura-rodape + $altura-borda));
+
+.titulo{
+    // color:red;
+    background-color: $cor-verde1;
+    width: 100%;
+    height: $altura-titulo;
+    line-height: $altura-titulo;
+    text-align: center;
+
+    font-family: $fonte-linda;
+    font-weight: 800;
+    font-size: $fonte-grande;
+        // border: 2px black solid;
+}
+
+.titulo:hover{
+    cursor: pointer;
+}
+
+.navegacao{
+    // color:red;
+    // border: 2px red solid;
+    display: flex;
+    flex-direction: row;
+    background-color: $cor-verde1;
+    background-color: $cor-fundo;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    height: $altura-nav;
+}
+
+// QUADROS______________________
+
+.quadros{
+        display: grid;
+        grid-template-columns: 1.6fr 3.6fr;
+        grid-template-rows: 2.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row dense;
+        grid-template-areas:
+          ". .";
+        width: 100%;
+        height:$altura-conteudo;
+        // border: #BC770F solid 4px;
+      
+}
+.quadros_esquerda{ 
+
+    // border: #e09119 solid 4px;
+    padding: 7% 8% 0 8%;
+     display: grid;
+        grid-template-columns: 1.6fr;
+        grid-template-rows: 1.8fr 1.8fr;
+        gap: 0px 0px;
+        grid-auto-flow: row dense;
+        grid-template-areas:
+          "."
+          ".";
+        // width: 91.3%;
+        height:calc(100% - $altura-nav - $altura-borda);
+
+        justify-content: center;
+        align-content:center;
+  
+}
+
+.livro{
+    
+
+    border:green solid 2px;
+    height:100%;
+    width: 100%;
+    justify-self: center ;
+
+}
+
+.produtos{
+    color:blue;
+}
+// QUADROS______________________

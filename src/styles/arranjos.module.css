@@ -1,0 +1,61 @@
+.titulo {
+  background-color: #D6F98B;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-family: LindenHill;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.titulo:hover {
+  cursor: pointer;
+}
+
+.navegacao {
+  display: flex;
+  flex-direction: row;
+  background-color: #D6F98B;
+  background-color: #EDFFC7;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  height: 50px;
+}
+
+.quadros {
+  display: grid;
+  grid-template-columns: 1.6fr 3.6fr;
+  grid-template-rows: 2.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas: ". .";
+  width: 100%;
+  height: calc(100% - 232px);
+}
+
+.quadros_esquerda {
+  padding: 7% 8% 0 8%;
+  display: grid;
+  grid-template-columns: 1.6fr;
+  grid-template-rows: 1.8fr 1.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas: "." ".";
+  height: calc(100% - 50px - 22px);
+  justify-content: center;
+  align-content: center;
+}
+
+.livro {
+  border: green solid 2px;
+  height: 100%;
+  width: 100%;
+  justify-self: center;
+}
+
+.produtos {
+  color: blue;
+}
+
+/*# sourceMappingURL=arranjos.module.css.map */

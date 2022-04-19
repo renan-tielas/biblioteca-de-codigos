@@ -1,0 +1,41 @@
+body, html {
+  border: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Aller";
+  src: url("../../public/fonts/Aller_Lt.ttf");
+  src: url("../../public/fonts/Aller_Bd.ttf");
+  font-family: "JosefinSans";
+  src: url("../../public/fonts/JosefinSans-Light.ttf");
+  src: url("../../public/fonts/JosefinSans-Bold.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-family: "QuickSand";
+  src: url("../../public/fonts/Quicksand-Light.otf");
+  src: url("../../public/fonts/Quicksand-Bold.otf");
+  font-family: "Reey";
+  src: url("../../public/fonts/Reey-Regular.otf");
+  font-family: "Insani";
+  src: url("../../public/fonts/Insanibc.ttf");
+  src: url("../../public/fonts/Insanibu.ttf");
+  font-family: "Philosopher";
+  src: url("../../public/fonts/Philosopher-Regular.ttf");
+  font-family: "Rainshow";
+  src: url("../../public/fonts/Rainshow.otf");
+  font-family: "Reey";
+  src: url("../../public/fonts/Reey-Regular.otf");
+}
+@font-face {
+  font-family: "LindenHill";
+  src: url("../../public/fonts/LindenHill.otf");
+  src: url("../../public/fonts/LindenHill-Italic.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,35 @@
+//resolver variaveis para nivel global
+$cor-verde1: #D6F98B;
+$cor-verde2: #CCF476;
+$cor-marrom: #FCDB86;
+$cor-marrom-escuro: #BC770F;
+$cor-fundo: #EDFFC7;
+
+$altura-nav:50px;
+$altura-titulo:60px;
+
+.botao{
+
+    // width: calc(100vw * 1/6);
+    width: calc(100vw/6);
+    height: $altura-nav;
+    line-height: $altura-nav;
+    text-align: center;
+    background-color: $cor-fundo;
+    // border-color: 2px  #ffa113 solid;
+border-width: 20px;
+
+
+}
+.botao:hover{
+    background-color: $cor-verde2;
+    cursor: pointer;
+}
+
+
+.cartao_pessoal{
+    border:green solid 2px;
+    height:60%;
+    width: 100%;
+    justify-self: center ;
+}
