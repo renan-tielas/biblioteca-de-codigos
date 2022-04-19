@@ -19,17 +19,18 @@ const Rodape = () => {
 
                 <div className={styles.rodape} >
                     <div className={styles.secao_1}>
-                    A agricultura familiar trás a única comida de verdade à sua mesa.<br/>
-                    Conheça e, principalmente, prove. <br/>Mais nutritiva, sem veneno, e mais gostosa!
+                    Site para aprender desenvolvimento web em português, com edição de código ao vivo, marcação de progresso, e compartilhamento de conhecimento.
+                     <br/>Aprenda, e compartilhe com os amigos!
                     </div>
-                    <div>
-                    aj slkaj slka jslk alksjlaljkajklajksjsajlksla sjl
+                    <div className={styles.secao_1}>
+                    Código Aleatório
                     </div>
-                    <div>
-                    aj slkaj slka jslk alksjlaljkajklajksjsajlksla sjl
+                    <div className={styles.secao_1}>
+                    Compartilhe com alguém!
                     </div>
-                    <div>
-                    aj slkaj slka jslk alksjlaljkajklajksjsajlksla sjl
+                    <div className={styles.secao_1}>
+                    Veja seu progesso<br/><br/>
+                    Obrigado por colaborar
                     </div>
          
                   

@@ -16,12 +16,15 @@ const Navegacao = () => {
     return (
       
                 <div className={styles.navegacao} >
-                    <Botao conteudo='Nóis' endereco='nois' ativo={estado_botao} />
-                    <Botao conteudo='Produtos ' endereco='produtos' ativo={estado_botao}/>
-                    <Botao conteudo='Locais' endereco='nois' ativo={estado_botao}/>
-                    <Botao conteudo='Ações' endereco='nois' ativo={estado_botao} />
-                    <Botao conteudo='Contatos' endereco='nois' ativo={estado_botao}/>
-                    <Botao conteudo='Entre'   endereco='nois' ativo={estado_botao} />
+                    <Botao conteudo='JavaScript' endereco='javascript' ativo={estado_botao} />
+                    <Botao conteudo='CSS ' endereco='css' ativo={estado_botao}/>
+                    <Botao conteudo='HTML' endereco='javascript' ativo={estado_botao}/>
+                    <Botao conteudo='React' endereco='javascript' ativo={estado_botao} />
+                    <Botao conteudo='Redux' endereco='javascript' ativo={estado_botao}/>
+                    <Botao conteudo='Node'   endereco='javascript' ativo={estado_botao} />
+                    <Botao conteudo='Outros'   endereco='outros' ativo={estado_botao} />
+                    <Botao conteudo='Editor'   endereco='editor' ativo={estado_botao} />
+                    
 
                 </div>
     )
