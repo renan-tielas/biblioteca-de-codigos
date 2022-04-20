@@ -26,7 +26,7 @@ const Rodape = () => {
                     Código Aleatório
                     </div>
                     <div className={styles.secao_1}>
-                    Compartilhe com alguém!
+                    Contribua com seu código, ensine para a comunidade :)
                     </div>
                     <div className={styles.secao_1}>
                     Veja seu progesso<br/><br/>

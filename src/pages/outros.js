@@ -1,7 +1,7 @@
 import Head from 'next/head'
 // import clientPromise from '../../lib/mongodb'
 import Cabeca from '../Leiaute/Cabeca'
-import Conteudo from '../Leiaute/Conteudo'
+import ConteudoOutros from '../Leiaute/ConteudoOutros'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
 
@@ -19,7 +19,7 @@ export default function Home({ isConnected }) {
 
 
       <Cabeca />
-      <Conteudo />
+      <ConteudoOutros />
 
       <Rodape />
     </main>

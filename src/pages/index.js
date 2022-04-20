@@ -7,11 +7,14 @@ import styles from '../styles/layout.module.css'
 
 
 
+
+
 export default function Home({ isConnected }) {
 
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
+      
       <Head>
         <title>Biblioteca de Códigos</title>
         <link rel="icon" href="/binary-code.png" />   {/* //icone */}

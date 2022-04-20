@@ -51,5 +51,12 @@ export default function Home({ isConnected }) {
 //   }
 // }
 
+// CONTEUDO
 
+// By default, every element box-sizing parameter is set to content-box. Which means, that if you set an element width to 200px and then add a padding of 20px on both horizontal end, this would result to a total width of 240px for that element.
 
+// to fix this, you simply need to update the box-sizing parameter and set this to border-box in your css. Or you can do this for all elements by simply adding the following.
+
+// * {
+//      box-sizing: border-box 
+//   }

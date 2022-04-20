@@ -6,6 +6,10 @@ body, html {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Aller";
   src: url("../../public/fonts/Aller_Lt.ttf");
