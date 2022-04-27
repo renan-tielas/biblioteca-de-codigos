@@ -4,19 +4,23 @@ import styles from '../styles/layout.module.css'
 import ItemCodigo from '../Componentes/ItemCodigo'
 
 
-const Rodape = () => {
+const ConteudoOutros = () => {
 
 
 
     return (
 
-        <div className={styles.conteudooutros} >
+        <section className={styles.conteudooutros} >
+            Tabela de Conteudos:
+            Gráficos
+            Animação SVG
 <ItemCodigo></ItemCodigo>        
-</div>
+
+</section>
 
 
     )
 
 }
 
-export default Rodape
+export default ConteudoOutros

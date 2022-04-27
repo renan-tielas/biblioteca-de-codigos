@@ -53,4 +53,5 @@ export default function Home({ isConnected }) {
 
 // CONTEUDO
 
-// PERMITIR EMMET COM REACT 
+// Mapear ecossistemas e dizer suas aplicações, funcionalidades, particularidades, vantaagens ...
+//  detalhar encaixe das tecnologias, e linkar para as áreas do site dedicadas àquelas tecnologias

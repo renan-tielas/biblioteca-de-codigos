@@ -21,8 +21,9 @@ const Navegacao = () => {
                     <Botao conteudo='HTML' endereco='javascript' ativo={estado_botao}/>
                     <Botao conteudo='React' endereco='javascript' ativo={estado_botao} />
                     <Botao conteudo='Redux' endereco='javascript' ativo={estado_botao}/>
-                    <Botao conteudo='Node'   endereco='javascript' ativo={estado_botao} />
+                    <Botao conteudo='Back End' endereco='backend' ativo={estado_botao} />
                     <Botao conteudo='Outros'   endereco='outros' ativo={estado_botao} />
+                    <Botao conteudo='Ecossistemas'   endereco='ecossistemas' ativo={estado_botao} />
                     <Botao conteudo='Editor'   endereco='editor' ativo={estado_botao} />
                     
 

@@ -11,9 +11,11 @@ const ItemCodigo = () => {
 
     return (
         // <div className={styles.conteudo} >
-        <div className={styles.item_codigo} >
-Codigo
-        </div>
+        <span className={styles.item_codigo} >
+            <h1 className={styles.titulo_codigo}> Titulo Código</h1>
+            <p className={styles.descricao_codigo}> </p>
+
+        </span>
         // </div>
 
 

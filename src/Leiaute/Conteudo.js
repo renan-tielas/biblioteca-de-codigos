@@ -1,10 +1,11 @@
 
 import styles from '../styles/layout.module.css'
+import BotoesFundo from '../Leiaute/BotoesFundo'
 // import { Heading, Flex } from '@chakra-ui/react'
 
 
 
-const Rodape = () => {
+const Conteudo = () => {
 
 
 
@@ -12,6 +13,8 @@ const Rodape = () => {
 
         <div className={styles.conteudo} >
             {/* conteudo */}
+
+            <BotoesFundo/>
         </div>
 
 
@@ -19,4 +22,4 @@ const Rodape = () => {
 
 }
 
-export default Rodape
+export default Conteudo
