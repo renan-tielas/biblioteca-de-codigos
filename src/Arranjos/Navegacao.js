@@ -15,7 +15,7 @@ const Navegacao = () => {
 
     return (
       
-                <div className={styles.navegacao} >
+                <nav className={styles.navegacao} >
                     <Botao conteudo='JavaScript' endereco='javascript' ativo={estado_botao} />
                     <Botao conteudo='CSS ' endereco='css' ativo={estado_botao}/>
                     <Botao conteudo='HTML' endereco='javascript' ativo={estado_botao}/>
@@ -27,7 +27,7 @@ const Navegacao = () => {
                     <Botao conteudo='Editor'   endereco='editor' ativo={estado_botao} />
                     
 
-                </div>
+                </nav>
     )
 
 }

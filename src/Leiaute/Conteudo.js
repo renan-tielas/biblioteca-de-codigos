@@ -11,11 +11,11 @@ const Conteudo = ({conteudo}) => {
 
     return (
 
-        <div className={styles.conteudo} >
+        <main className={styles.conteudo} >
             {conteudo}
 
             {/* <BotoesFundo/> */}
-        </div>
+        </main>
 
 
     )

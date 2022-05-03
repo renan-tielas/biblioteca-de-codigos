@@ -12,15 +12,15 @@ const Cabeca = () => {
 
 
     return (
-        <div>
+        <header>
             <Link href={`/`}>
                 <div className={styles.titulo} >
-                    Biblioteca de Códigos
+                    Laboratório do Código
                 </div>
             </Link>
             <Navegacao />
 
-        </div>
+        </header>
 
     )
 

@@ -1,46 +1,30 @@
 import Head from 'next/head'
 // import clientPromise from '../../lib/mongodb'
 import Cabeca from '../Leiaute/Cabeca'
-import ConteudoJavascript from '../Conteudos/ConteudoJavascript'
-import Conteudo from '../Leiaute/Conteudo'
+import ConteudoOutros from '../Leiaute/ConteudoOutros'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
 import Header from '../Componentes/Header'
 
+// type Tipo = string
+type Tipo = 'bold' | 'italic'
+let texto:Tipo ;
 
-let indice = {
-  titulo: 'javascript',
-  secoes: { 
-    titulo: 'A linguagem',
-    subcategorias:{
-    
-    categoria_x:{
-      titulos_artigos:[],
-    }
-      
-     
-    }
-  }   }
+// pesquisar o que é interface
+interface TipoItemCodigo {
+nome:string
+}
 
-
-
-var defaultsettings = {
-  ajaxsettings: {},
-  uisettings: {}
-};
-
-defaultsettings["ajaxsettings"]["somekey"] = "some value";
-defaultsettings["uisettings"]["somekey"] = "some value";
 
 export default function Home({ isConnected }) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
-      <Header />
+      <Header/>
 
 
-      <Cabeca />
-      <Conteudo conteudo={<ConteudoJavascript />} />
+      <Cabeca />npm install --save @types/html
+      <ConteudoOutros />
 
       <Rodape />
     </main>
@@ -72,3 +56,6 @@ export default function Home({ isConnected }) {
 
 
 
+// CONTEUDO
+
+// PERMITIR EMMET COM REACT 
