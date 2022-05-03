@@ -1,25 +1,22 @@
 import Head from 'next/head'
 // import clientPromise from '../../lib/mongodb'
 import Cabeca from '../Leiaute/Cabeca'
+import ConteudoJavascript from '../Conteudos/ConteudoJavascript'
 import Conteudo from '../Leiaute/Conteudo'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
-
+import Header from '../Componentes/Header'
 
 
 export default function Home({ isConnected }) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
-      <Head>
-        <title>Biblioteca de Códigos</title>
-        <link rel="icon" href="/binary-code2.png" />   {/* //icone */}
-        {/* <meta>  ???? </meta> */}
-      </Head>
+      <Header/>
 
 
       <Cabeca />
-      <Conteudo />
+      <Conteudo conteudo={<ConteudoJavascript/>} />
 
       <Rodape />
     </main>

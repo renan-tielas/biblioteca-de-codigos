@@ -5,16 +5,16 @@ import BotoesFundo from '../Leiaute/BotoesFundo'
 
 
 
-const Conteudo = () => {
+const Conteudo = ({conteudo}) => {
 
 
 
     return (
 
         <div className={styles.conteudo} >
-            {/* conteudo */}
+            {conteudo}
 
-            <BotoesFundo/>
+            {/* <BotoesFundo/> */}
         </div>
 
 

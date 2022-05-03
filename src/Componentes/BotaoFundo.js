@@ -1,21 +1,21 @@
 
-import styles from '../styles/componentes.module.css'
+import styles from '../styles/layout.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
 import Link from 'next/link'
 
 
-const Botao = ({conteudo,endereco}) => {
+const BotaoFundo = ({conteudo,endereco}) => {
 
 
     return (
 <Link href={`/${endereco}`}>
         <div className={styles.botaofundo} >
 
-            {conteudo}
+           
         </div>
  </Link>
     )
 
 }
 
-export default Botao
+export default BotaoFundo

@@ -1,3 +1,6 @@
+
+// $altura-conteudo:calc(100% - ($altura-nav + $altura-titulo + $altura-rodape + $altura-borda));
+
 body, html {
     border: 0;
     height: 100%;
@@ -9,21 +12,6 @@ body, html {
 * {
     box-sizing: border-box 
  }
-$fonte-linda: LindenHill;
-$fonte-aller: Aller;
-$fonte-quicksand: QuickSand;
-$fonte-josefin: JosefinSans;
-$fonte-rainshow: Rainshow;
-$fonte-philosopher: Philosopher;
-$fonte-insani: Insani;
-$fonte-reey: Reey;
-$fonte-grande:32px;
-$cor-verde1: #D6F98B;
-$cor-verde2: #CCF476;
-$cor-marrom1: #855d13;
-$cor-marrom2: #dfce98;
-$cor-marrom: #FCDB86;
-$cor-marrom-escuro: #3b2401;
 
 @font-face {
         font-family: 'Aller';

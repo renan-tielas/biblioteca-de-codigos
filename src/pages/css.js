@@ -4,6 +4,8 @@ import Cabeca from '../Leiaute/Cabeca'
 import Quadros from '../Arranjos/Quadros'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
+import Header from '../Componentes/Header'
+import Conteudo from '../Leiaute/Conteudo'
 
 
 
@@ -11,16 +13,12 @@ export default function Home({ isConnected }) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
-      <Head>
-        <title>Célula Solidária</title>
-        <link rel="icon" href="/favicon.ico" />   {/* //icone */}
-        {/* <meta>  ???? </meta> */}
-      </Head>
+      <Header/>
 
 
 
       <Cabeca />
-      
+      <Conteudo/>
       {/* <Quadros /> */}
 
       <Rodape />

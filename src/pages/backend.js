@@ -1,4 +1,4 @@
-// import Head from 'next/head'
+import Head from 'next/head'
 // import clientPromise from '../../lib/mongodb'
 import Cabeca from '../Leiaute/Cabeca'
 import Conteudo from '../Leiaute/Conteudo'
@@ -7,22 +7,17 @@ import styles from '../styles/layout.module.css'
 import Header from '../Componentes/Header'
 
 
-
-
 export default function Home({ isConnected }) {
-
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
-      
       <Header/>
-        
+
 
       <Cabeca />
       <Conteudo />
 
       <Rodape />
-      
     </main>
 
 
@@ -30,11 +25,7 @@ export default function Home({ isConnected }) {
 
   )
 }
-
-
-// BACK END DESATIVADO
-
-
+// DESATIVADO
 // export async function getServerSideProps(context) {
 //   try {
 //     // client.db() will be the default database passed in the MONGODB_URI

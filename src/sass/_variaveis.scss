@@ -1,0 +1,40 @@
+$altura-nav:50px;
+$altura-rodape:110px;
+$altura-titulo:50px;
+$altura-bordado:2*32px;
+$altura-conteudo:calc(100% - ($altura-nav + $altura-titulo + $altura-rodape ));
+
+
+$altura-borda: 1*22px;
+
+
+$indentacao-1: 2rem;
+$indentacao-2: 3rem;
+// $altura-conteudo:calc(100% - ($altura-nav + $altura-titulo + $altura-rodape + $altura-borda));
+
+$fonte-grande:19px;
+$fonte-grande2:24px;
+$fonte-tamanho1:20px;
+$fonte-titulo-codigo:18px;
+$fonte-descricao-codigo:16px;
+
+$fonte-linda: LindenHill;
+$fonte-aller: Aller;
+$fonte-quicksand: QuickSand;
+$fonte-josefin: JosefinSans;
+$fonte-rainshow: Rainshow;
+$fonte-philosopher: Philosopher;
+$fonte-insani: Insani;
+$fonte-reey: Reey;
+
+$cor-fonte:#3b2401;
+
+$cor-fundo: #fcfdf2;
+$cor-fundo: #ffffff;
+$cor-verde1: #D6F98B;
+$cor-verde2: #CCF476;
+$cor-marrom1: #855d13;
+$cor-marrom2: #dfce98;
+$cor-marrom: #FCDB86;
+$cor-marrom-escuro: #3b2401;
+$cor-laranja: #cf7105;

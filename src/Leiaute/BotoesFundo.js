@@ -11,7 +11,8 @@ const BotoesFundo = () => {
     return (
 
  <div className={styles.botoesfundo}>
-<BotaoFundo></BotaoFundo>
+     {/* {for} */}
+<BotaoFundo/>
  </div>
 
 

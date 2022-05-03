@@ -4,19 +4,14 @@ import Cabeca from '../Leiaute/Cabeca'
 import ConteudoOutros from '../Leiaute/ConteudoOutros'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
-
+import Header from '../Componentes/Header'
 
 
 export default function Home({ isConnected }) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
-      <Head>
-        <title>Biblioteca de Códigos</title>
-        <link rel="icon" href="/binary-code2.png" />   {/* //icone */}
-        {/* <meta>  ???? </meta> */}
-      </Head>
-
+      <Header/>
 
       <Cabeca />
       <ConteudoOutros />
