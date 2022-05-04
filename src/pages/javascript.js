@@ -6,6 +6,7 @@ import Conteudo from '../Leiaute/Conteudo'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
 import Header from '../Componentes/Header'
+import FormularioCodigo from '../Arranjos/FormularioCodigo'
 
 
 let indice = {
@@ -41,7 +42,7 @@ export default function Home({ isConnected }) {
 
       <Cabeca />
       <Conteudo conteudo={<ConteudoJavascript />} />
-
+      <FormularioCodigo/>
       <Rodape />
     </main>
 

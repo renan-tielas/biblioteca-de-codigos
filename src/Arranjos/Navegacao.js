@@ -1,4 +1,5 @@
 import { useState } from 'react/cjs/react.development';
+import React from 'react';
 import Botao from'../Componentes/Botao';
 import styles from '../styles/arranjos.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
