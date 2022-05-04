@@ -1,3 +1,12 @@
+Uma plataforma de aprendizado de desenvolvimento. Iniciando como projeto pessoal, busca organizar conhecimentos da área do desenvolvimento web de maneira estruturada, interativa e participativa. Com referências básicas de conceitos e trechos de código em português. Abordando linguagens, bibliotecas, frameworks e stacks front e back end. Assim como padrões de desenvolvimento e design, testagem, e outros tópicos. Em fase inicial de desenvolvimento
+
+
+
+
+
+
+
+
 ## Example app using MongoDB
 
 [MongoDB](https://www.mongodb.com/) is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. This example will show you how to connect to and use MongoDB as your backend for your Next.js app.
