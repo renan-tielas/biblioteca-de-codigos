@@ -1,12 +1,12 @@
 
 import styles from '../styles/leiaute.module.css'
-import BotoesFundo from '../Objetos/BotoesFundo'
-import { Component } from 'react'
+// import BotoesFundo from '../Objetos/BotoesFundo'
+// import { Component } from 'react'
 // import { Heading, Flex } from '@chakra-ui/react'
 
 
 
-const Conteudo = ({conteudo}:Component) => {
+const Conteudo = ({conteudo}:Element) => {
 
 
 

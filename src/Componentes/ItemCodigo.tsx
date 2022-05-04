@@ -6,13 +6,15 @@ import styles from '../styles/componentes.module.css'
 interface ItemCodigo {
     titulo:string,
     descricao:string,
-    texto:string,
-    subtitulos:string,
-    subitems:string,
+    conteudo:string,
+    subtitulos:string[],
+    subitems:string[],
+    link:string,
+    // mudar para url
 
 
 }
-const ItemCodigo = ({ titulo, descricao, texto, subtitulos, subitems }:ItemCodigo) => {
+const ItemCodigo = ({ titulo, descricao, conteudo, subtitulos, subitems }:ItemCodigo) => {
 
 
 
@@ -27,9 +29,10 @@ const ItemCodigo = ({ titulo, descricao, texto, subtitulos, subitems }:ItemCodig
             </header>
 
             <section>
-                <span className={styles.texto_codigo}> {texto} </span>
-                {subitems
-                    // ? subitems.map((i) => (
+                <span className={styles.texto_codigo}> {conteudo} </span>
+                {subitems }{ subtitulos}
+            
+                    {/* // ? subitems.map((i) => (
                     //     <div>
                     //         <div key={0} className={styles.texto_codigo}>
 
@@ -42,8 +45,8 @@ const ItemCodigo = ({ titulo, descricao, texto, subtitulos, subitems }:ItemCodig
                     //         </div>
                     //     </div>
                     // ))
-                    // : ''
-                    }
+                    // : '' */}
+                    
             </section>
 
         </article>
