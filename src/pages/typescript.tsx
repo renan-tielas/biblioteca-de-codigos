@@ -5,6 +5,7 @@ import ConteudoOutros from '../Leiaute/ConteudoOutros'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
 import Header from '../Componentes/Header'
+import { HtmlProps } from 'next/dist/shared/lib/html-context'
 
 // type Tipo = string
 type Tipo = 'bold' | 'italic'
@@ -12,18 +13,50 @@ let texto:Tipo ;
 
 // pesquisar o que é interface
 interface TipoItemCodigo {
-nome:string
+nome:string;
+[key:string]:any
 }
 
+function pow(x:number,y:number) : string {
+return Math.pow(x,y).toString();
+}
+function inutil(x:number,y:number) : void {
+    'sem retorno'
+  }
 
+
+  // Array
+
+  const arr: number[] =[]
+
+  arr.push(1)
+  // arr.push('1')
+  // arr.push('abc')
+
+// TUPLE
+  type minhaLista =[number?,string?,boolean?]
+let arr2:minhaLista =[]
+  arr2.push(1)
+  arr2.push(1)
+  arr2.push(1)
+
+
+  // Generics
+
+  class Observable<T>{
+    constructor(public value: T) {}
+  }
+  let x: Observable<number>
+  // let y: Observable<Person>
+  
 export default function Home({ isConnected }) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
-      <Header/>
+      {/* <Header/> FALTA TIPAR*/}
 
 
-      <Cabeca />npm install --save @types/html
+      <Cabeca />
       <ConteudoOutros />
 
       <Rodape />

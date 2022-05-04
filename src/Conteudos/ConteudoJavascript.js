@@ -1,5 +1,5 @@
       import styles from '../styles/conteudos.module.css'
-      import BotoesFundo from '../Leiaute/BotoesFundo'
+      import BotoesFundo from '../Arranjos/BotoesFundo'
 import ItemCodigo from '../Componentes/ItemCodigo'
     //   import 
       // import { Heading, Flex } from '@chakra-ui/react'

@@ -1,6 +1,6 @@
 
 import styles from '../styles/layout.module.css'
-import BotoesFundo from '../Leiaute/BotoesFundo'
+import BotoesFundo from '../Arranjos/BotoesFundo'
 // import { Heading, Flex } from '@chakra-ui/react'
 
 

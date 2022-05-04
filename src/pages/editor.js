@@ -1,7 +1,7 @@
 import Head from 'next/head'
 // import clientPromise from '../../lib/mongodb'
 import Cabeca from '../Leiaute/Cabeca'
-import ConteudoEditor from '../Leiaute/ConteudoEditor'
+import ConteudoEditor from '../Conteudos/ConteudoEditor'
 import Rodape from '../Leiaute/Rodape'
 import styles from '../styles/layout.module.css'
 import Header from '../Componentes/Header'
