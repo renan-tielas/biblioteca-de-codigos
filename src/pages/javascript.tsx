@@ -1,48 +1,48 @@
-import Head from 'next/head'
+
 // import clientPromise from '../../lib/mongodb'
 import Cabeca from '../Leiaute/Cabeca'
 import ConteudoJavascript from '../Conteudos/ConteudoJavascript'
 import Conteudo from '../Leiaute/Conteudo'
 import Rodape from '../Leiaute/Rodape'
-import styles from '../styles/layout.module.css'
-import Header from '../Componentes/Header'
-import FormularioCodigo from '../Arranjos/FormularioCodigo'
+import styles from '../styles/leiaute.module.css'
+import Header from '../Leiaute/Header'
 
 
-let indice = {
-  titulo: 'javascript',
-  secoes: { 
-    titulo: 'A linguagem',
-    subcategorias:{
+
+// let indice = {
+//   titulo: 'javascript',
+//   secoes: { 
+//     titulo: 'A linguagem',
+//     subcategorias:{
     
-    categoria_x:{
-      titulos_artigos:[],
-    }
+//     categoria_x:{
+//       titulos_artigos:[],
+//     }
       
      
-    }
-  }   }
+//     }
+//   }   }
 
 
 
-var defaultsettings = {
-  ajaxsettings: {},
-  uisettings: {}
-};
+// let defaultsettings = {
+//   ajaxsettings: {},
+//   uisettings: {}
+// };
 
-defaultsettings["ajaxsettings"]["somekey"] = "some value";
-defaultsettings["uisettings"]["somekey"] = "some value";
+// defaultsettings["ajaxsettings"]["somekey"] = "some value";
+// defaultsettings["uisettings"]["somekey"] = "some value";
 
-export default function Home({ isConnected }) {
+export default function Home({ isConnected }:boolean) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
-      <Header />
+      <Header/>
 
 
       <Cabeca />
       <Conteudo conteudo={<ConteudoJavascript />} />
-      <FormularioCodigo/>
+     
       <Rodape />
     </main>
 

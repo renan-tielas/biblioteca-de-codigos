@@ -1,15 +1,15 @@
 import Head from 'next/head'
 // import clientPromise from '../../lib/mongodb'
 import Cabeca from '../Leiaute/Cabeca'
-import Quadros from '../Arranjos/Quadros'
+import Quadros from '../Objetos/Quadros'
 import Rodape from '../Leiaute/Rodape'
-import styles from '../styles/layout.module.css'
-import Header from '../Componentes/Header'
+import styles from '../styles/leiaute.module.css'
+import Header from '../Leiaute/Header'
 import Conteudo from '../Leiaute/Conteudo'
 
 
 
-export default function Home({ isConnected }) {
+export default function Home({ isConnected }:boolean) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >

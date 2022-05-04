@@ -3,15 +3,16 @@ import Head from 'next/head'
 import Cabeca from '../Leiaute/Cabeca'
 import ConteudoOutros from '../Leiaute/ConteudoOutros'
 import Rodape from '../Leiaute/Rodape'
-import styles from '../styles/layout.module.css'
-import Header from '../Componentes/Header'
+import styles from '../styles/leiaute.module.css'
+import Header from '../Leiaute/Header'
 
 
-export default function Home({ isConnected }) {
+export default function Home({ isConnected }:boolean) {
   return (
     // <ChakraProvider>
     <main className={styles.corpo} >
       <Header/>
+
 
       <Cabeca />
       <ConteudoOutros />
@@ -48,5 +49,4 @@ export default function Home({ isConnected }) {
 
 // CONTEUDO
 
-// Mapear ecossistemas e dizer suas aplicações, funcionalidades, particularidades, vantaagens ...
-//  detalhar encaixe das tecnologias, e linkar para as áreas do site dedicadas àquelas tecnologias
+// PERMITIR EMMET COM REACT 

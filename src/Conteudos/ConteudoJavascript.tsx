@@ -1,9 +1,8 @@
       import styles from '../styles/conteudos.module.css'
-      import BotoesFundo from '../Arranjos/BotoesFundo'
+      import BotoesFundo from '../Objetos/BotoesFundo'
 import ItemCodigo from '../Componentes/ItemCodigo'
-    //   import 
-      // import { Heading, Flex } from '@chakra-ui/react'
-      
+import FormularioCodigo from '../Objetos/FormularioCodigo'
+
 
       // dados = {}
       
@@ -22,7 +21,7 @@ import ItemCodigo from '../Componentes/ItemCodigo'
                  subtitulos={['subtitulo1','subtitulo2'] } 
                  subitems={['subitem1','subitem2'] }
                  link={['www.link.com']} />
-                
+                 <FormularioCodigo/>
               </div>
       
       

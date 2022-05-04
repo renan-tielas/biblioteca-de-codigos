@@ -1,5 +1,5 @@
 
-import styles from '../styles/arranjos.module.css'
+import styles from '../styles/objetos.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
 import CartaoPessoal from'../Componentes/CartaoPessoal';
 

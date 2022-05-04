@@ -1,5 +1,5 @@
 
-import styles from '../styles/layout.module.css'
+import styles from '../styles/leiaute.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
 import ItemCodigo from '../Componentes/ItemCodigo'
 

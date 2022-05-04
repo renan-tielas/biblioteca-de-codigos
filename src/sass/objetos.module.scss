@@ -28,6 +28,60 @@ background-attachment: fixed;
 background-size: cover;
 }
 
+.formulario_codigo{
+  // display: flex;
+  // flex-direction: column;
+  width: 40%;
+  height:v.$altura-conteudo;
+ 
+
+  display: grid; 
+  grid-auto-flow: row dense; 
+  grid-template-columns: 1.6fr; 
+  grid-template-rows: 1.5fr 2fr 0.5fr 2fr; 
+  gap: 0px 0px; 
+  width: 40%; 
+  height: 36.7%; 
+
+}
+.topo {
+  display: grid; 
+  grid-template-columns: 1.3fr 0.7fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". ."
+    ". ."; 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+.conteudo { grid-area: 2 / 1 / 5 / 2;
+  width: 100%;  }
+.conteudo_2 { grid-area: 4 / 1 / 5 / 2; 
+  width: 100%;  }
+
+.subtitulo {
+  display: grid; 
+  grid-template-columns: 1.3fr 0.7fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". ."; 
+  grid-area: 3 / 1 / 4 / 2; 
+}
+
+  
+  // border: #BC770F solid 4px;
+
+
+
+
+
+
+
+
+
+
+
 // QUADROS______________________
 
 .quadros{

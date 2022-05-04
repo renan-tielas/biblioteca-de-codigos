@@ -1,11 +1,12 @@
 
-import styles from '../styles/layout.module.css'
-import BotoesFundo from '../Arranjos/BotoesFundo'
+import styles from '../styles/leiaute.module.css'
+import BotoesFundo from '../Objetos/BotoesFundo'
+import { Component } from 'react'
 // import { Heading, Flex } from '@chakra-ui/react'
 
 
 
-const Conteudo = ({conteudo}) => {
+const Conteudo = ({conteudo}:Component) => {
 
 
 

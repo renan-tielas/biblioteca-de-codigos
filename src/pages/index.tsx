@@ -3,13 +3,13 @@
 import Cabeca from '../Leiaute/Cabeca'
 import Conteudo from '../Leiaute/Conteudo'
 import Rodape from '../Leiaute/Rodape'
-import styles from '../styles/layout.module.css'
-import Header from '../Componentes/Header'
+import styles from '../styles/leiaute.module.css'
+import Header from '../Leiaute/Header'
 
 
 
 
-export default function Home({ isConnected }) {
+export default function Home({ isConnected }:boolean) {
 
   return (
     // <ChakraProvider>

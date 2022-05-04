@@ -1,8 +1,8 @@
 
-import styles from '../styles/arranjos.module.css'
+import styles from '../styles/objetos.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
-import CartaoPessoal from'../Componentes/CartaoPessoal';
-import Livro from'../Arranjos/Livro';
+// import CartaoPessoal from'../Componentes/CartaoPessoal';
+// import Livro from'./Livro';
 
 
 const Quadros = () => {
@@ -12,7 +12,7 @@ const Quadros = () => {
     return (
         // <div className={styles.conteudo} >
         <div className={styles.quadros} >
-
+{/* 
             <div className={styles.quadros_esquerda} >
                 <div className={styles.quadro_esq1}>
                     <CartaoPessoal/>
@@ -25,7 +25,7 @@ const Quadros = () => {
             <div className={styles.produtos}>
 
                 PRODUTOS
-            </div>
+            </div> */}
         </div>
         // </div>
 

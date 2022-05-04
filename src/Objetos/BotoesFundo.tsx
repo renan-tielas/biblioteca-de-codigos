@@ -1,7 +1,7 @@
 
-import styles from '../styles/layout.module.css'
+import styles from '../styles/leiaute.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
-import BotaoFundo from '../Componentes/BotaoFundo'
+import QuadradoFundo from '../Componentes/QuadradoFundo'
 
 
 const BotoesFundo = () => {
@@ -12,7 +12,7 @@ const BotoesFundo = () => {
 
  <div className={styles.botoesfundo}>
      {/* {for} */}
-<BotaoFundo/>
+<QuadradoFundo/>
  </div>
 
 

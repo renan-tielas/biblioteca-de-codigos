@@ -1,11 +1,11 @@
 
-import styles from '../styles/componentes.module.css'
+// import styles from '../styles/componentes.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 import Head from 'next/head'
-
-const Header = ({ conteudo, endereco }) => {
+//  (conteudo:string, endereco:string )
+const Header = () => {
 
 
     return (

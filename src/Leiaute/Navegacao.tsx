@@ -1,7 +1,7 @@
 import { useState } from 'react/cjs/react.development';
-import React from 'react';
+
 import Botao from'../Componentes/Botao';
-import styles from '../styles/arranjos.module.css'
+import styles from '../styles/objetos.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
 
 
@@ -9,7 +9,9 @@ import styles from '../styles/arranjos.module.css'
 // estado_botao= setState[0]/////
 // assim fazer um "tema" pra inverter as cores do navegador, com a do botão acionado
 
-let estado_botao= 0;
+let estado_botao = false;
+// fazer mudança de cores usando estado useState 
+
 const Navegacao = () => {
 
 

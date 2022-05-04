@@ -4,7 +4,13 @@ import styles from '../styles/componentes.module.css'
 import Link from 'next/link'
 
 
-const Botao = ({conteudo,endereco}) => {
+interface Botao{
+    conteudo:string,
+    endereco:string,
+    ativo:boolean
+}
+
+const Botao = ({conteudo,endereco, ativo}:Botao) => {
 
 
     return (

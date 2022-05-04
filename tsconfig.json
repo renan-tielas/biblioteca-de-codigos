@@ -29,13 +29,13 @@
     "node_modules"
   ]
 }
-    // {
-    //     "compilerOptions": {
-    //         "target": "esnext",
-    //         "watch": true,
-    //         "lib": [
-    //             "dom",
-    //             "es2017"
-    //         ]
-    //     }
-    // }
+// {
+//     "compilerOptions": {
+//         "target": "esnext",
+//         "watch": true,
+//         "lib": [
+//             "dom",
+//             "es2017"
+//         ]
+//     }
+// }

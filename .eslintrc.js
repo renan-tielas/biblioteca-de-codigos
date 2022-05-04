@@ -12,12 +12,13 @@ module.exports = {
             'plugin:@typescript-eslint/recommended',
           //   'plugin:@typescript-eslint/recommended-requiring-type-checking',
           ],
-         } ],
+          
+         rules:  {
+          "react/jsx-uses-react": "off",
+          "react/react-in-jsx-scope": "off"
+        // Overwrite rules specified from the extended configs e.g. 
+        // "@typescript-eslint/explicit-function-return-type": "off",
+      }}],
     
-    rules:  {
-        "react/jsx-uses-react": "off",
-        "react/react-in-jsx-scope": "off"
-      // Overwrite rules specified from the extended configs e.g. 
-      // "@typescript-eslint/explicit-function-return-type": "off",
-    }
+    
   }

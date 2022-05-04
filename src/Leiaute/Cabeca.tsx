@@ -1,6 +1,6 @@
 
-import Navegacao from '../Arranjos/Navegacao'
-import styles from '../styles/layout.module.css'
+import Navegacao from './Navegacao'
+import styles from '../styles/leiaute.module.css'
 import Link from 'next/link'
 
 // import { Heading, Flex } from '@chakra-ui/react'
