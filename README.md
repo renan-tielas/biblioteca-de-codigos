@@ -3,12 +3,7 @@
 
 Uma plataforma de aprendizado de desenvolvimento. Iniciando como projeto pessoal, busca organizar conhecimentos da área do desenvolvimento web de maneira estruturada, interativa e participativa. Com referências básicas de conceitos e trechos de código em português. Abordando linguagens, bibliotecas, frameworks e stacks front e back end. Assim como padrões de desenvolvimento e design, testagem, e outros tópicos. Em fase inicial de desenvolvimento.
 
-
-
-![image](https://user-images.githubusercontent.com/52353767/166737880-7c848dec-f7a9-4c26-a9d5-94646670ed06.png)
-
-
-
+![laboratorio0](https://user-images.githubusercontent.com/52353767/166738457-da5749d5-141c-434c-846f-796c58b7fbcd.png)
 
 
 ## Example app using MongoDB
