@@ -3,10 +3,8 @@
 
 Uma plataforma de aprendizado de desenvolvimento. Iniciando como projeto pessoal, busca organizar conhecimentos da área do desenvolvimento web de maneira estruturada, interativa e participativa. Com referências básicas de conceitos e trechos de código em português. Abordando linguagens, bibliotecas, frameworks e stacks front e back end. Assim como padrões de desenvolvimento e design, testagem, e outros tópicos. Em fase inicial de desenvolvimento.
 
-
-
-
-
+## Print do layout inicial
+![laboratorio0](https://user-images.githubusercontent.com/52353767/166739044-9becf9ef-5cd7-4f93-80f4-2f92beea70b2.png)
 
 
 
