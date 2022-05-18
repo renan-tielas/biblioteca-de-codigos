@@ -13,17 +13,17 @@ import FormularioCodigo from '../Objetos/FormularioCodigo'
       
           return (
             // 
-              <div className={styles.ConteudoJavascript} >
+              <div className={styles.conteudo_javascript} >
                  {/* <ItemCodigo titulo={'For'} descricao={'Faça um for lindo'} texto={'Agore mesmo voce vai aprender'} /> */}
                  {/* <ItemCodigo titulo={'bla'} descricao={'bliu'} /> */}
-
+{/* !!!!!!!!!!!
                  <ItemCodigo titulo={'bla'} 
                  descricao={'bliu'} 
                  conteudo={'conteudo da postagemm ai sim brabo'}
                  subtitulos={['subtitulo1','subtitulo2'] } 
                  subitems={['subitem1','subitem2'] }
                  link={'www.link.com'} />
-                 
+                  */}
                  <FormularioCodigo/>
               </div>
       

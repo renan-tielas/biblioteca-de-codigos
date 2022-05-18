@@ -19,17 +19,16 @@ const Navegacao = () => {
     return (
       
                 <nav className={styles.navegacao} >
-                    <Botao conteudo='JavaScript' endereco='javascript' ativo={estado_botao} />
-                    <Botao conteudo='CSS ' endereco='css' ativo={estado_botao}/>
                     <Botao conteudo='HTML' endereco='javascript' ativo={estado_botao}/>
-                    <Botao conteudo='React' endereco='javascript' ativo={estado_botao} />
-                    <Botao conteudo='Redux' endereco='javascript' ativo={estado_botao}/>
+                    <Botao conteudo='CSS ' endereco='css' ativo={estado_botao}/>
+                    <Botao conteudo='JavaScript' endereco='javascript' ativo={estado_botao} />
+                    <Botao conteudo='TypeScript' endereco='javascript' ativo={estado_botao} />
+                    <Botao conteudo='Front End' endereco='javascript' ativo={estado_botao} />
                     <Botao conteudo='Back End' endereco='backend' ativo={estado_botao} />
-                    <Botao conteudo='Outros'   endereco='outros' ativo={estado_botao} />
-                    <Botao conteudo='Ecossistemas'   endereco='ecossistemas' ativo={estado_botao} />
+                    <Botao conteudo='Ferramentas'   endereco='outros' ativo={estado_botao} />
+                    <Botao conteudo='Padrões'   endereco='outros' ativo={estado_botao} />
+                    <Botao conteudo='Design'   endereco='ecossistemas' ativo={estado_botao} />
                     <Botao conteudo='Editor'   endereco='editor' ativo={estado_botao} />
-                    
-
                 </nav>
     )
 

@@ -1,0 +1,64 @@
+.conteudo, .descricao, .titulo {
+  margin-bottom: 1rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(247, 223, 147, 0.8274509804);
+}
+
+.formulario_codigo {
+  font-family: LindenHill;
+  font-size: 20px;
+  color: #3b2401;
+  display: inline-block;
+  margin-top: 1rem;
+  width: 40%;
+  margin-left: 4rem;
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 1.6fr;
+  grid-template-rows: 1.5fr 2fr 0.5fr 2fr;
+  gap: 0px 0px;
+  width: 40%;
+}
+
+.formulario_borda {
+  border: 10px solid rgba(247, 223, 147, 0.8274509804);
+}
+
+.titulo {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.descricao {
+  width: 85%;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.conteudo {
+  width: 85%;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.botao {
+  width: 20%;
+  height: 10%;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  left: 40%;
+  font-family: LindenHill;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #3b2401;
+  border: 6px solid rgba(105, 64, 1, 0.6509803922);
+}
+
+.botao:hover {
+  border: 6px solid rgba(247, 223, 147, 0.8274509804);
+}
+
+/*# sourceMappingURL=formularios.module.css.map */
