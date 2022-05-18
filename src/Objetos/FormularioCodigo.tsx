@@ -32,7 +32,7 @@ const FormularioCodigo = () => {
 
         <legend style={{padding:'10px 20px',fontSize:'22px'}}>Compartilhe com a gente seu conhecimento!</legend>
         <div className="topo">
-        <input className={styles.titulo} type="text" name="text" id="POST-titulo"/> <label htmlFor="POST-titulo">Titulo do código, ou tópico</label>
+        <input className={styles.titulo} tabIndex={1} type="text" name="text" id="POST-titulo"/> <label htmlFor="POST-titulo">Titulo do código, ou tópico</label>
         <div></div>
      
         <textarea className={styles.descricao} name="conteudo" id="POST-descricao" cols={40} rows={5}></textarea><label htmlFor="POST-descricao">Descrição</label>

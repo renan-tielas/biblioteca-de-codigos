@@ -9,7 +9,7 @@
 
     font-family: LindenHill;
     font-size: v.$fonte-tamanho1;
-    color: black;
+    color: v.$cor-marrom-escuro
 };
 %borda_ativa{
     border-top:none;
@@ -20,7 +20,7 @@
 
 }
 
-.formulario_codigo{
+.item_codigo{
     // display: flex;
     // flex-direction: column;
     // overflow: hidden;
@@ -29,25 +29,26 @@
     color: v.$cor-marrom-escuro;
     display: inline-block;
     margin-top: 1rem;
-    width: 40%;
+    width: 90%;
     // height:10%;
    margin-left: 4rem;
  
     display: grid; 
     grid-auto-flow: row dense; 
     grid-template-columns: 1.6fr; 
-    grid-template-rows: 1.5fr 2fr 0.5fr 2fr; 
+    grid-template-rows: 1.5fr 2fr 0.5fr 1fr; 
     gap: 0px 0px; 
-    width: 40%; 
+    width: 70%; 
     // height: 10%; 
+    border-bottom:4px solid v.$cor-marrom-escuro_2;
  
    }
   .formulario_borda{
       border:10px solid v.$cor-marrom2;
       
   }
-  .titulo {
-      @extend %borda;
+  .titulo_codigo {
+    //   @extend %borda;
     margin-top: 1rem;
     width: 40%;
     // height: 6rem;
@@ -67,7 +68,8 @@
     width: 85%;
     height: 6rem;
     margin-bottom: 1rem;
-    @extend %borda;
+   
+    // @extend %borda;
 }
 
 .botao{

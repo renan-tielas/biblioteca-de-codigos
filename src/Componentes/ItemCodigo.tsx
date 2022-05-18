@@ -1,5 +1,5 @@
 
-import styles from '../styles/componentes.module.css'
+import styles from '../styles/itens.module.css'
 // import { Heading, Flex } from '@chakra-ui/react'
 
 // { meta }
@@ -28,8 +28,8 @@ const ItemCodigo = ({ titulo, descricao, conteudo, subtitulos, subitems }:ItemCo
                 <p className={styles.descricao_codigo}> {descricao} </p>
             </header>
 
-            <section>
-                <span className={styles.texto_codigo}> {conteudo} </span>
+            <section  className={styles.conteudo}>
+                <span> {conteudo} </span>
                 {subitems }{ subtitulos}
             
                     {/* // ? subitems.map((i) => (

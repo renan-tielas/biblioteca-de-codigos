@@ -1,4 +1,4 @@
-.conteudo, .descricao, .titulo {
+.descricao {
   margin-bottom: 1rem;
   border-top: none;
   border-left: none;
@@ -6,7 +6,7 @@
   border-bottom: 2px solid rgba(247, 223, 147, 0.8274509804);
   font-family: LindenHill;
   font-size: 20px;
-  color: black;
+  color: #3b2401;
 }
 
 .titulo:focus {
@@ -16,27 +16,28 @@
   border-bottom: 2px solid rgba(247, 223, 147, 0.8274509804);
 }
 
-.formulario_codigo {
+.item_codigo {
   font-family: LindenHill;
   font-size: 20px;
   color: #3b2401;
   display: inline-block;
   margin-top: 1rem;
-  width: 40%;
+  width: 90%;
   margin-left: 4rem;
   display: grid;
   grid-auto-flow: row dense;
   grid-template-columns: 1.6fr;
-  grid-template-rows: 1.5fr 2fr 0.5fr 2fr;
+  grid-template-rows: 1.5fr 2fr 0.5fr 1fr;
   gap: 0px 0px;
-  width: 40%;
+  width: 70%;
+  border-bottom: 4px solid rgba(105, 65, 5, 0.3764705882);
 }
 
 .formulario_borda {
   border: 10px solid rgba(247, 223, 147, 0.8274509804);
 }
 
-.titulo {
+.titulo_codigo {
   margin-top: 1rem;
   width: 40%;
 }
@@ -71,4 +72,4 @@
   border: 6px solid rgba(247, 223, 147, 0.8274509804);
 }
 
-/*# sourceMappingURL=formularios.module.css.map */
+/*# sourceMappingURL=itens.module.css.map */

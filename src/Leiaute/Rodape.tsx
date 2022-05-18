@@ -17,6 +17,7 @@ const Rodape = () => {
                 </div> */}
 
                 <div className={styles.rodape} >
+                   
                     <div className={styles.secao_1}>
                     Site para aprender desenvolvimento web em português, com edição de código ao vivo, marcação de progresso, e compartilhamento de conhecimento.
                      <br/><br/>Aprenda, e compartilhe com os amigos!
@@ -32,7 +33,7 @@ const Rodape = () => {
                     Obrigado por colaborar
                     </div>
          
-                  
+                    
                 </div>
 
             {/* </div> */}
