@@ -5,7 +5,7 @@
   border-right: none;
   border-bottom: 2px solid rgba(247, 223, 147, 0.8274509804);
   font-family: LindenHill;
-  font-size: 20px;
+  font-size: 24px;
   color: #3b2401;
 }
 
@@ -18,7 +18,7 @@
 
 .item_codigo {
   font-family: LindenHill;
-  font-size: 20px;
+  font-size: 24px;
   color: #3b2401;
   display: inline-block;
   margin-top: 1rem;
@@ -27,7 +27,7 @@
   display: grid;
   grid-auto-flow: row dense;
   grid-template-columns: 1.6fr;
-  grid-template-rows: 1.5fr 2fr 0.5fr 1fr;
+  grid-template-rows: 1.5fr 2fr 0.5fr 1.5fr;
   gap: 0px 0px;
   width: 70%;
   border-bottom: 4px solid rgba(105, 65, 5, 0.3764705882);
@@ -54,9 +54,15 @@
   margin-bottom: 1rem;
 }
 
-.botao {
+.codigo {
+  background-color: #855d13;
+  font-size: 20px;
+}
+
+.botao_codigo, .botao {
   width: 20%;
   height: 10%;
+  min-height: 50px;
   justify-self: center;
   align-self: center;
   position: relative;
@@ -66,10 +72,16 @@
   background-color: #ffffff;
   color: #3b2401;
   border: 6px solid rgba(105, 64, 1, 0.6509803922);
+  margin-right: 12px;
 }
 
-.botao:hover {
+.botao_codigo:hover, .botao:hover {
   border: 6px solid rgba(247, 223, 147, 0.8274509804);
+}
+
+.botao_codigo {
+  border: 4px solid rgba(105, 64, 1, 0.6509803922);
+  margin-right: 12px;
 }
 
 /*# sourceMappingURL=itens.module.css.map */

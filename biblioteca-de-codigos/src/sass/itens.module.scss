@@ -8,7 +8,7 @@
     border-bottom:2px solid v.$cor-marrom2;
 
     font-family: LindenHill;
-    font-size: v.$fonte-tamanho1;
+    font-size: v.$fonte-tamanho2;
     color: v.$cor-marrom-escuro
 };
 %borda_ativa{
@@ -25,7 +25,7 @@
     // flex-direction: column;
     // overflow: hidden;
     font-family: LindenHill;
-    font-size: v.$fonte-tamanho1;
+    font-size: v.$fonte-tamanho2;
     color: v.$cor-marrom-escuro;
     display: inline-block;
     margin-top: 1rem;
@@ -36,7 +36,7 @@
     display: grid; 
     grid-auto-flow: row dense; 
     grid-template-columns: 1.6fr; 
-    grid-template-rows: 1.5fr 2fr 0.5fr 1fr; 
+    grid-template-rows: 1.5fr 2fr 0.5fr 1.5fr; 
     gap: 0px 0px; 
     width: 70%; 
     // height: 10%; 
@@ -71,10 +71,14 @@
    
     // @extend %borda;
 }
-
-.botao{
+.codigo{
+    background-color: v.$cor-marrom1;
+    font-size: v.$fonte-tamanho1;
+}
+%botao{
     width: 20%;
     height: 10%;
+    min-height: v.$altura-nav;
     // padding: 6px 20px;
     justify-self: center;
     align-self: center;
@@ -85,8 +89,23 @@
     background-color: v.$cor-fundo  ;
     color: v.$cor-marrom-escuro;
     border:6px solid v.$cor-marrom3;
+    margin-right: 12px;
+}
+%botao_hover{border:6px solid v.$cor-marrom2;}
+.botao{
+    @extend %botao;
 }
 .botao:hover{
 
-    border:6px solid v.$cor-marrom2;
+    @extend %botao_hover;
+}
+
+.botao_codigo{
+     @extend %botao;
+   
+    border:4px solid v.$cor-marrom3;
+    margin-right: 12px;
+}
+.botao_codigo:hover{
+    @extend %botao_hover;
 }

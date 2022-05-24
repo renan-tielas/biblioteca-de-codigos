@@ -7,6 +7,7 @@ interface ItemCodigo {
     titulo:string,
     descricao:string,
     conteudo:string,
+    codigo:string,
     subtitulos:string[],
     subitems:string[],
     link:string,
@@ -14,7 +15,7 @@ interface ItemCodigo {
 
 
 }
-const ItemCodigo = ({ titulo, descricao, conteudo, subtitulos, subitems }:ItemCodigo) => {
+const ItemCodigo = ({ titulo, descricao, conteudo, codigo, subtitulos, subitems }:ItemCodigo) => {
 
 
 
@@ -30,8 +31,12 @@ const ItemCodigo = ({ titulo, descricao, conteudo, subtitulos, subitems }:ItemCo
 
             <section  className={styles.conteudo}>
                 <span> {conteudo} </span>
+                <br/> <br/>
+                <code> {codigo} </code>
+                <br/> <br/>
                 {subitems }{ subtitulos}
-            
+                <button  className={styles.botao_codigo}>comentar</button>
+                <button  className={styles.botao_codigo}>deletar</button>
                     {/* // ? subitems.map((i) => (
                     //     <div>
                     //         <div key={0} className={styles.texto_codigo}>
@@ -46,6 +51,7 @@ const ItemCodigo = ({ titulo, descricao, conteudo, subtitulos, subitems }:ItemCo
                     //     </div>
                     // ))
                     // : '' */}
+                   
                     
             </section>
 
