@@ -7,6 +7,10 @@ const UsuarioSchema = new mongoose.Schema({
         required: true,
         type: String
     },
+    email: {
+        required: true,
+        type: String
+    },
     dataCriacao:{
         type: Date,
         default:new Date(),

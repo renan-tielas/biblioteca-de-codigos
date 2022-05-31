@@ -8,17 +8,21 @@ import axios, { AxiosResponse } from 'axios';
 
 
 
-//Post Method
+//// POST -  Cria Usuário
+
 router.post('/post', async (req: Request, res: Response)=> {
    
     
     try {
+        if (!req.body.email || !req.body.nome){res.status(400).send('usuario sem nome ou email')}
+
         const usuario = new Usuario({
             nome: req.body.nome,
+            email: req.body.email,
             dataCriacao: req.body.dataCriacao           // age: req.body.age
         })
         const dataToSave = usuario.save();
-        res.status(200).send(usuario).json(dataToSave)
+        res.status(201).send(usuario).json(dataToSave)
         // res.status(200).json(dataToSave)
     }
 
@@ -27,36 +31,10 @@ router.post('/post', async (req: Request, res: Response)=> {
         res.status(500).send('Erro no servidor')
     
     }
-    // catch (err:any) {
-    //     let errorMessage = "Failed to do something exceptional";
-    //     if (err instanceof Error) {
-    //     err.message =  errorMessage ;
-    //       }
-          
-    //     res.status(400).json({message: err.message})
-    //     throw new Error(err);
-        
-    // }
 })
 
 
-
-// const addPost = async (req: Request, res: Response, next: NextFunction) => {
-//     // get the data from req.body
-//     let title: string = req.body.title;
-//     let body: string = req.body.body;
-//     // add the post
-//     let response: AxiosResponse = await axios.post(`https://jsonplaceholder.typicode.com/posts`, {
-//         title,
-//         body
-//     });
-//     // return response
-//     return res.status(200).json({
-//         message: response.data
-//     });
-// };
-
-//Get all Method
+//GET ALL - Pega todos os Usuários
 router.get('/pegaUsuarios', async (req: Request, res: Response) => {
     
 try {
@@ -142,3 +120,50 @@ router.delete('/delete/:id',  (req: Request, res: Response) => {
 })
 
 module.exports = router;
+
+
+
+
+
+
+// const addPost = async (req: Request, res: Response, next: NextFunction) => {
+//     // get the data from req.body
+//     let title: string = req.body.title;
+//     let body: string = req.body.body;
+//     // add the post
+//     let response: AxiosResponse = await axios.post(`https://jsonplaceholder.typicode.com/posts`, {
+//         title,
+//         body
+//     });
+//     // return response
+//     return res.status(200).json({
+//         message: response.data
+//     });
+// };
+
+
+
+    // catch (err:any) {
+    //     let errorMessage = "Failed to do something exceptional";
+    //     if (err instanceof Error) {
+    //     err.message =  errorMessage ;
+    //       }
+          
+    //     res.status(400).json({message: err.message})
+    //     throw new Error(err);
+        
+    // }
+
+
+
+// RETIRADO DE ARQUIVO TIPOS .TSX
+    // type Tipos{ interface Postagem {
+//     titulo:string,
+//     conteudo:string,
+//     tags:string[]
+//   }
+//   interface PropsPagina{
+//     isConnected:boolean,
+//     posts: Postagem[]
+//   }}
+//   export default Tipos

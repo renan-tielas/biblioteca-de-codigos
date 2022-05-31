@@ -1,3 +1,4 @@
+"use strict";
 // type Tipos{ interface Postagem {
 //     titulo:string,
 //     conteudo:string,
