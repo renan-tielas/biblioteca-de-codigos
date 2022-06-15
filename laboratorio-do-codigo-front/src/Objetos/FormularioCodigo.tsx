@@ -83,7 +83,19 @@ const handleSubmitCriarCodigo = async (e) => {
   }
 
 }
+// useEffect(() => {
+//   async function fetchMyAPI() {
 
+//     api.get('/pegaCodigos').then(({data})=>{
+//       poeCodigos(data.data);
+//     });
+
+//   }
+
+//   fetchMyAPI()
+// }, [codigos])
+
+// FAZER ASSINCRONICIDADE FUNCIONAR!!!!!!!!!
 try {
   useEffect(()=>{
     api.get('/pegaCodigos').then(({data})=>{
@@ -108,8 +120,8 @@ try {
      <div >
         
     <h1>
-    {codigos[0].titulo}
-     {codigos.toString}
+    {/* {JSON.stringify(codigos)} */}
+     {codigos[1].titulo}
     {/* {console.log(codigos[0])} */}
     
 </h1>
