@@ -1,5 +1,10 @@
-
+import api from '../../services/api'
 import styles from '../styles/formularios.module.css'
+import { useState, useEffect } from 'react'
+import Torradinha from '../Componentes/Torradinha'
+import { Codigo } from '../Tipos/tipos'
+import ItemCodigo from '../Componentes/ItemCodigo'
+import { Item } from 'framer-motion/types/components/Reorder/Item'
 // import { Heading, Flex } from '@chakra-ui/react'
 // import CartaoPessoal from'../Componentes/CartaoPessoal';
 // import Livro from'./Livro';
@@ -9,13 +14,86 @@ import styles from '../styles/formularios.module.css'
 //Fazer saídas opcionais, para ter codigos sem subtitulo por exemplo
 
 
-type Inputs = {
-  example: string,
-  exampleRequired: string,
-};
-
 
 const FormularioCodigo = () => {
+
+  const [titulo, poeTitulo] = useState("")
+  const [link, poeLink] = useState("")
+  const [descricao, poeDescricao] = useState("")
+  const [conteudo, poeConteudo] = useState("")
+  const [codigos, poeCodigos] = useState([]) //clients setClients
+  const [id, poeId] = useState(null)
+  const [estaFormularioAberto, poeFormularioAberto] = useState(false)
+  const [estaCarregando, poeCarregando] = useState(false)
+
+
+  // type Torradinha = {
+  //   titulo: string,
+  //   descricao: string,
+  //   codigo:number
+  // };  
+
+  // const Torradinha:Torradinha =<div className={styles.torradinha}/>
+
+  const seraDadoValidoFormulario = () => {
+
+    if (!titulo) {
+      // const mensagem ={titulo:'Preencha o campo titulo!',descricao: 'erro',codigo: 400}
+      const mensagem = { titulo: 'Preencha o campo titulo!', descricao: 'erro', codigo: 400, duracao: 9000, seraFechavel: true }
+
+
+      return Torradinha(mensagem)
+    }
+    if (!descricao) {
+      const mensagem = { titulo: 'Preencha o campo descrição!', descricao: 'erro', codigo: 400, duracao: 9000, seraFechavel: true }
+      return Torradinha(mensagem)
+    }
+    if (!conteudo) {
+      const mensagem = { titulo: 'Preencha o campo conteudo!', descricao: 'erro', codigo: 400, duracao: 9000, seraFechavel: true }
+      return Torradinha(mensagem)
+    }
+    // if (codigos.some((codigo)=>codigo.titulo == titulo && codigo._id != id)) {
+    //   const mensagem ={titulo:'Preencha o campo código!',descricao: 'erro',codigo: 400, duracao:9000, seraFechavel:true}
+    //   return Torradinha(mensagem)
+    // } !!!!! DESATIVADO - ATIVAR
+
+    // if(!titulo){ POSSIBILIDADE
+    //   return  Torradinha({titulo:'Preencha o campo titulo!',descricao:'erro',codigo:'400', timeDuration:2000, isClosable:true })
+    // }
+
+  }
+
+
+const handleSubmitCriarCodigo = async (e) => {
+  e.preventdefault();
+
+  if (seraDadoValidoFormulario()) return;
+
+  try {
+    poeCarregando(true);
+    const {data} = await api.post("/postaCodigo",{titulo,descricao,codigos})
+    poeCodigos(codigos.concat(data.data));
+    poeTitulo("");
+    poeDescricao("");
+    poeCarregando(false);
+    const mensagem = { titulo: 'Código postado com sucesso, brabo', descricao: 'sinistrin', codigo: 201, duracao: 9000, seraFechavel: true }
+    Torradinha(mensagem)
+  } catch (error) {
+    
+  }
+
+}
+
+try {
+  useEffect(()=>{
+    api.get('/pegaCodigos').then(({data})=>{
+      poeCodigos(data.data);
+    });
+  }, [codigos])
+} catch (error) {
+  console.log(error)
+  
+}
 
 
   // const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
@@ -25,21 +103,42 @@ const FormularioCodigo = () => {
   return (
 
 
-    // style={{width:'100%',marginBottom:'20rem'}}
-//  <div >
-    <form  className={styles.formulario_codigo} action="" method="post" id="formulario-codigo" >
-      <fieldset  className={styles.formulario_borda}>
 
-        <legend style={{padding:'10px 20px',fontSize:'22px'}}>Compartilhe com a gente seu conhecimento!</legend>
+    // style={{width:'100%',marginBottom:'20rem'}}
+     <div >
+        
+    <h1>
+    {codigos[0].titulo}
+     {codigos.toString}
+    {/* {console.log(codigos[0])} */}
+    
+</h1>
+    <form className={styles.formulario_codigo} action="" method="post" id="formulario-codigo" onSubmit={handleSubmitCriarCodigo} >
+      <fieldset className={styles.formulario_borda}>
+
+        <legend style={{ padding: '10px 20px', fontSize: '22px' }}>Compartilhe com a gente seu conhecimento!</legend>
+       
         <div className="topo">
-        <input className={styles.titulo} tabIndex={1} type="text" name="text" id="POST-titulo"/> <label htmlFor="POST-titulo">Titulo do código, ou tópico</label>
-        <div></div>
-     
-        <textarea className={styles.descricao} name="conteudo" id="POST-descricao" cols={40} rows={5}></textarea><label htmlFor="POST-descricao">Descrição</label>
+
+          <input className={styles.titulo} tabIndex={1} type="text" name="text" id="POST-titulo" 
+          value={titulo}
+          onChange={(e)=>{poeTitulo(e.target.value)}} />
+          <label htmlFor="POST-titulo">Titulo do código, ou tópico</label>
+          <div></div>
+
+          <textarea className={styles.descricao} name="conteudo" id="POST-descricao" cols={40} rows={5}
+           value={descricao}
+           onChange={(e)=>{poeDescricao(e.target.value)}} ></textarea>
+          <label htmlFor="POST-descricao">Descrição</label>
+
         </div>
 
+
         {/* <div onAuxClick={}> */}
-        <textarea  className={styles.conteudo}  name="text" id="POST-texto"/> <label htmlFor="POST-texto">Conteúdo</label>
+        <textarea className={styles.conteudo} name="text" id="POST-texto" 
+         value={conteudo}
+         onChange={(e)=>{poeConteudo(e.target.value)}} ></textarea>
+        <label htmlFor="POST-texto">Conteúdo</label>
         {/* </div> */}
 
         {/* function Form() { EXEMPLO REACT DE FORMULARIO
@@ -65,10 +164,12 @@ const FormularioCodigo = () => {
         </div> */}
         <button className={styles.botao} type="submit" form="formulario-codigo" value="Submit">Enviar</button>
       </fieldset>
-    
-    </form>
 
-    // </div> 
+    </form>
+   
+{/* {console.log(codigos[1].titulo)} */}
+{/* <ItemCodigo titulo={codigos.titulo} /> */}
+    </div> 
 
 
   )

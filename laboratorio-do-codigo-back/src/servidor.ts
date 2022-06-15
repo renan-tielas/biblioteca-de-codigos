@@ -13,7 +13,8 @@ const rotas = require('./rotas/rotas');
 // dbConnection()
 connectDB()
 const app = express();
-
+var cors = require('cors');
+app.use(cors());
 
 app.use(express.json({extended:false}));
 //permite usar os dados em request.body

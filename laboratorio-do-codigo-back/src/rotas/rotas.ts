@@ -1,58 +1,39 @@
 const express = require('express');
-const Usuario = require('../models/modeloUsuario');
-const router = express.Router()
+const modelos = require('../models/modelos');
+import requisicoes from '../controllers/requisicoes';
 // import express from 'express';
 // import mongoose from 'mongoose';
 import { Router, Request, Response } from 'express';
+const router = express.Router()
+
 import axios, { AxiosResponse } from 'axios';
 
 
 
 //// POST -  Cria Usuário
-
-router.post('/post', async (req: Request, res: Response)=> {
-   
-    
-    try {
-        if (!req.body.email || !req.body.nome){res.status(400).send('usuario sem nome ou email')}
-
-        const usuario = new Usuario({
-            nome: req.body.nome,
-            email: req.body.email,
-            dataCriacao: req.body.dataCriacao           // age: req.body.age
-        })
-        const dataToSave = usuario.save();
-        res.status(201).send(usuario).json(dataToSave)
-        // res.status(200).json(dataToSave)
-    }
-
-    catch(err:any){
-        console.error(err.message);
-        res.status(500).send('Erro no servidor')
-    
-    }
-})
-
-
+router.post('/post', requisicoes.addUsuario);
+router.get('/pegaUsuarios', requisicoes.pegaUsuarios);
+router.post('/postaCodigo', requisicoes.addCodigo);
+router.get('/pegaCodigos', requisicoes.pegaCodigos);
 //GET ALL - Pega todos os Usuários
-router.get('/pegaUsuarios', async (req: Request, res: Response) => {
+// router.get('/pegaUsuarios', async (req: Request, res: Response) => {
     
-try {
-    const usuarios = await Usuario.find({})
-    res.status(200).json({success:true, data:usuarios})
-}
-catch (err:any) {
-    let errorMessage = "Failed to do something exceptional";
-    if (err instanceof Error) {
-    err.message =  errorMessage ;
-      }
+// try {
+//     const usuarios = await Usuario.find({})
+//     res.status(200).json({success:true, data:usuarios})
+// }
+// catch (err:any) {
+//     let errorMessage = "Failed to do something exceptional";
+//     if (err instanceof Error) {
+//     err.message =  errorMessage ;
+//       }
       
-    res.status(400).json({message: err.message})
-    throw new Error(err);
+//     res.status(400).json({message: err.message})
+//     throw new Error(err);
     
-}
+// }
   
-})
+// })
 
 //Get by ID Method
 router.get('/getOne/:id',  (req: Request, res: Response)=> {

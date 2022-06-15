@@ -1,52 +1,32 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require('express');
-const Usuario = require('../models/modeloUsuario');
+const modelos = require('../models/modelos');
+const requisicoes_1 = __importDefault(require("../controllers/requisicoes"));
 const router = express.Router();
 //// POST -  Cria Usuário
-router.post('/post', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        if (!req.body.email || !req.body.nome) {
-            res.status(400).send('usuario sem nome ou email');
-        }
-        const usuario = new Usuario({
-            nome: req.body.nome,
-            email: req.body.email,
-            dataCriacao: req.body.dataCriacao // age: req.body.age
-        });
-        const dataToSave = usuario.save();
-        res.status(201).send(usuario).json(dataToSave);
-        // res.status(200).json(dataToSave)
-    }
-    catch (err) {
-        console.error(err.message);
-        res.status(500).send('Erro no servidor');
-    }
-}));
+router.post('/post', requisicoes_1.default.addUsuario);
+router.get('/pegaUsuarios', requisicoes_1.default.pegaUsuarios);
+router.post('/postaCodigo', requisicoes_1.default.addCodigo);
+router.get('/pegaCodigos', requisicoes_1.default.pegaCodigos);
 //GET ALL - Pega todos os Usuários
-router.get('/pegaUsuarios', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const usuarios = yield Usuario.find({});
-        res.status(200).json({ success: true, data: usuarios });
-    }
-    catch (err) {
-        let errorMessage = "Failed to do something exceptional";
-        if (err instanceof Error) {
-            err.message = errorMessage;
-        }
-        res.status(400).json({ message: err.message });
-        throw new Error(err);
-    }
-}));
+// router.get('/pegaUsuarios', async (req: Request, res: Response) => {
+// try {
+//     const usuarios = await Usuario.find({})
+//     res.status(200).json({success:true, data:usuarios})
+// }
+// catch (err:any) {
+//     let errorMessage = "Failed to do something exceptional";
+//     if (err instanceof Error) {
+//     err.message =  errorMessage ;
+//       }
+//     res.status(400).json({message: err.message})
+//     throw new Error(err);
+// }
+// })
 //Get by ID Method
 router.get('/getOne/:id', (req, res) => {
     try {

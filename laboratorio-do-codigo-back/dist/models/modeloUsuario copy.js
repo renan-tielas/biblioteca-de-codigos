@@ -23,37 +23,6 @@ const UsuarioSchema = new mongoose_1.default.Schema({
     //     type: Number
     // }
 });
-const CodigoSchema = new mongoose_1.default.Schema({
-    titulo: {
-        required: true,
-        type: String
-    },
-    descricao: {
-        required: true,
-        type: String
-    },
-    link: {
-        required: false,
-        type: URL
-    },
-    conteudo: {
-        required: true,
-        type: String
-    },
-    codigo: {
-        required: false,
-        type: String
-    },
-    dataCriacao: {
-        type: Date,
-        default: new Date(),
-    }
-    // age: {
-    //     required: true,
-    //     type: Number
-    // }
-});
 const Usuario = mongoose_1.default.model('Usuario', UsuarioSchema);
-const Codigo = mongoose_1.default.model('Codigo', CodigoSchema);
-module.exports = [Usuario, Codigo];
+module.exports = Usuario;
 //qual

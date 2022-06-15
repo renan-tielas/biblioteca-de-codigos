@@ -27,7 +27,11 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "eslint.workingDirectories": [
+        "../laboratorio-do-codigo-front",
+        "../laboratorio-do-codigo-back"
+    ]
 }
 // {
 //     "compilerOptions": {
