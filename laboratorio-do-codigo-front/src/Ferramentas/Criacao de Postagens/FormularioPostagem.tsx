@@ -115,7 +115,7 @@ const handleSubmitCriarCodigo = async (e) => {
   // const onSubmit: SubmitHandler<Inputs>etete = data => console.log(data);
   //  console.log(watch("example"))
   // console.log(errors);
-  // console.log(codigos[1].titulo)!!!!!!!!!!!!!!!!!estou aqui - problema async!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  console.log(codigos[1].titulo)
 
   return (
 
@@ -154,7 +154,7 @@ const handleSubmitCriarCodigo = async (e) => {
          value={conteudo}
          onChange={(e)=>{poeConteudo(e.target.value)}} ></textarea>
         <label htmlFor="POST-texto">Conteúdo</label>
-        </div>
+        {/* </div> */}
 
         {/* function Form() { EXEMPLO REACT DE FORMULARIO
   function handleSubmit(e) {

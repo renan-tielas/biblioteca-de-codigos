@@ -21,14 +21,14 @@ const Navegacao = () => {
                 <nav className={styles.navegacao} >
                     <Botao conteudo='HTML' endereco='javascript' ativo={estado_botao}/>
                     <Botao conteudo='CSS ' endereco='css' ativo={estado_botao}/>
-                    <Botao conteudo='JavaScript' endereco='javascript' ativo={estado_botao} />
+                    <Botao conteudo='JavaScript' endereco='paginas/Javascript' ativo={estado_botao} />
                     <Botao conteudo='TypeScript' endereco='javascript' ativo={estado_botao} />
                     <Botao conteudo='Front End' endereco='javascript' ativo={estado_botao} />
                     <Botao conteudo='Back End' endereco='backend' ativo={estado_botao} />
                     <Botao conteudo='Ferramentas'   endereco='outros' ativo={estado_botao} />
                     <Botao conteudo='Padrões'   endereco='outros' ativo={estado_botao} />
                     <Botao conteudo='Design'   endereco='ecossistemas' ativo={estado_botao} />
-                    <Botao conteudo='Editor'   endereco='editor' ativo={estado_botao} />
+                    <Botao conteudo='Editor'   endereco='paginas/Editor' ativo={estado_botao} />
                 </nav>
     )
 
